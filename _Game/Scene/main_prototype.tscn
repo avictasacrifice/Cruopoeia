@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://t2uqkp12v6t8"]
 
-[node name="Node3D" type="Node3D" unique_id=403618801]
+[ext_resource type="Script" uid="uid://dlsxasmg3fg6n" path="res://_Game/Scripts/сard_arranger.gd" id="1_jx51t"]
+
+[node name="Main" type="Node3D" unique_id=403618801]
+
+[node name="Hand manager" type="Node3D" parent="." unique_id=987071060]
+
+[node name="Сard arranger" type="Node3D" parent="Hand manager" unique_id=505041963]
+script = ExtResource("1_jx51t")
