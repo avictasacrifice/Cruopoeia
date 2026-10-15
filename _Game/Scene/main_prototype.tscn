@@ -1,10 +1,24 @@
 [gd_scene format=3 uid="uid://t2uqkp12v6t8"]
 
-[ext_resource type="Script" uid="uid://dlsxasmg3fg6n" path="res://_Game/Scripts/сard_arranger.gd" id="1_jx51t"]
+[ext_resource type="Script" uid="uid://dln1qk24oa28k" path="res://_Game/Scripts/main.gd" id="1_3ut33"]
+[ext_resource type="Script" uid="uid://dlsxasmg3fg6n" path="res://_Game/Scripts/Card_arranger.gd" id="1_jx51t"]
+[ext_resource type="Script" uid="uid://debemxympgll4" path="res://_Game/Scripts/CardData.gd" id="2_kg7ld"]
+[ext_resource type="PackedScene" uid="uid://bki0yal6tx15r" path="res://_Game/Scene/Card_Demo.tscn" id="4_6lbxh"]
 
-[node name="Main" type="Node3D" unique_id=403618801]
+[sub_resource type="Resource" id="Resource_3ut33"]
+script = ExtResource("2_kg7ld")
+metadata/_custom_type_script = "uid://debemxympgll4"
+
+[node name="Main" type="Node3D" unique_id=403618801 node_paths=PackedStringArray("hand")]
+script = ExtResource("1_3ut33")
+test_card = SubResource("Resource_3ut33")
+hand = NodePath("Hand manager/Card arranger")
 
 [node name="Hand manager" type="Node3D" parent="." unique_id=987071060]
 
-[node name="Сard arranger" type="Node3D" parent="Hand manager" unique_id=505041963]
+[node name="Card arranger" type="Node3D" parent="Hand manager" unique_id=505041963]
 script = ExtResource("1_jx51t")
+card_scene = ExtResource("4_6lbxh")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=776212796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)

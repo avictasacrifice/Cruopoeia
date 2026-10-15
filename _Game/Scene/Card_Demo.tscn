@@ -1,6 +1,18 @@
 [gd_scene format=3 uid="uid://bki0yal6tx15r"]
 
 [ext_resource type="Script" uid="uid://cp06qfgjxcp4g" path="res://_Game/Scripts/Card3D.gd" id="1_u6kbg"]
+[ext_resource type="PackedScene" uid="uid://bip5bdc3gvt46" path="res://_Game/Models/Cards/card0.glb" id="2_cswi0"]
 
 [node name="Card_3d" type="Node3D" unique_id=2123455406]
 script = ExtResource("1_u6kbg")
+
+[node name="Visual" type="Node3D" parent="." unique_id=684743365]
+
+[node name="card0" parent="Visual" unique_id=1155947487 instance=ExtResource("2_cswi0")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CostLabel" type="Label3D" parent="Visual" unique_id=2129770444]
+
+[node name="NameLabel" type="Label3D" parent="Visual" unique_id=1327649764]
+
+[node name="DescLabel" type="Label3D" parent="Visual" unique_id=372823209]
