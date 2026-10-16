@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dlsxasmg3fg6n" path="res://_Game/Scripts/Card_arranger.gd" id="1_jx51t"]
 [ext_resource type="Script" uid="uid://debemxympgll4" path="res://_Game/Scripts/CardData.gd" id="2_kg7ld"]
 [ext_resource type="PackedScene" uid="uid://bki0yal6tx15r" path="res://_Game/Scene/Card_Demo.tscn" id="4_6lbxh"]
+[ext_resource type="Script" uid="uid://evoyixf7eb0" path="res://_Game/Scripts/mouse_manager.gd" id="5_cv0lt"]
 
 [sub_resource type="Resource" id="Resource_3ut33"]
 script = ExtResource("2_kg7ld")
@@ -15,13 +16,20 @@ test_card = SubResource("Resource_3ut33")
 hand = NodePath("Hand manager/Card arranger")
 
 [node name="Hand manager" type="Node3D" parent="." unique_id=987071060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.57586646, 0)
 
 [node name="Card arranger" type="Node3D" parent="Hand manager" unique_id=505041963]
 script = ExtResource("1_jx51t")
 card_scene = ExtResource("4_6lbxh")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=776212796]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.17412)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=798275757]
-transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.50000006, 0, -0.5, 0.86602545, 0, 0, 0)
+
+[node name="Managers" type="Node" parent="." unique_id=259195951]
+
+[node name="Mouse manager" type="Node3D" parent="Managers" unique_id=402384323 node_paths=PackedStringArray("camera")]
+script = ExtResource("5_cv0lt")
+camera = NodePath("../../Camera3D")

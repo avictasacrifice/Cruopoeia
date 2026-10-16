@@ -2,18 +2,31 @@
 
 [ext_resource type="Script" uid="uid://cp06qfgjxcp4g" path="res://_Game/Scripts/Card3D.gd" id="1_u6kbg"]
 [ext_resource type="PackedScene" uid="uid://bip5bdc3gvt46" path="res://_Game/Models/Cards/card0.glb" id="2_cswi0"]
+[ext_resource type="Script" uid="uid://cfpa33mqkrbr6" path="res://_Game/Scripts/card_area.gd" id="2_i2idx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1jhmp"]
+size = Vector3(0.9, 0.01, 0.61)
 
 [node name="Card_3d" type="Node3D" unique_id=2123455406]
 script = ExtResource("1_u6kbg")
 
 [node name="Visual" type="Node3D" parent="." unique_id=684743365]
 
-[node name="card0" parent="Visual" unique_id=1155947487 instance=ExtResource("2_cswi0")]
-transform = Transform3D(3.821371e-16, 8.742278e-09, 0.2, 0.2, -8.742278e-09, 0, 8.742278e-09, 0.2, -8.742278e-09, 0, 0, 0)
-top_level = true
-
 [node name="NameLabel" type="Label3D" parent="Visual" unique_id=1327649764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36148402, 0.008728772)
 
 [node name="DescLabel" type="Label3D" parent="Visual" unique_id=372823209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.36716726, 0.022252798)
 
 [node name="CostLabel" type="Label3D" parent="Visual" unique_id=2129770444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17025268, 0.2742762, 0.004888177)
+
+[node name="CardArea" type="Area3D" parent="." unique_id=1440725726]
+transform = Transform3D(1.9106853e-15, 4.3711385e-08, 0.99999994, 0.99999994, -4.3711385e-08, 1.3234889e-22, 4.3711385e-08, 0.99999994, -4.3711385e-08, 0, 0, 0)
+script = ExtResource("2_i2idx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CardArea" unique_id=343070136]
+shape = SubResource("BoxShape3D_1jhmp")
+
+[node name="card0" parent="CardArea" unique_id=1155947487 instance=ExtResource("2_cswi0")]
+transform = Transform3D(0.30000004, -8.881784e-16, 0, 8.881784e-16, 0.30000004, -8.881784e-16, 0, 8.881784e-16, 0.30000004, 0, 0, 0)
