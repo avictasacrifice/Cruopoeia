@@ -47,4 +47,4 @@ func _get_area_under_mouse() -> Area3D:
 	return null
 
 func _on_area_clicked(area: Area3D) -> void:
-	print("Клик по Area3D: ", area.name)
+	area._mouse_clicked()
