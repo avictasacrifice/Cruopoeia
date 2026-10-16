@@ -22,7 +22,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.36716726, 0.022252798)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17025268, 0.2742762, 0.004888177)
 
 [node name="card0" parent="Visual" unique_id=1155947487 instance=ExtResource("2_cswi0")]
-transform = Transform3D(5.732057e-16, 1.3113418e-08, 0.3, 0.3, -1.3113418e-08, 7.852818e-23, 1.3113418e-08, 0.3, -1.3113418e-08, 0, 0, 0)
 
 [node name="CardArea" type="Area3D" parent="Visual" unique_id=1440725726 node_paths=PackedStringArray("visual")]
 transform = Transform3D(1.9106853e-15, 4.3711385e-08, 0.99999994, 0.99999994, -4.3711385e-08, 1.3234889e-22, 4.3711385e-08, 0.99999994, -4.3711385e-08, 0, 0, 0)

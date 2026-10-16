@@ -1,10 +1,9 @@
 extends Node3D
 
-@export var test_card: CardData
-
-@export var hand : Node3D
+@export var hand_cards: Array[CardData]
+@export var hand: Hand3D
 
 
 func _ready() -> void:
-	for i in 5:
-		hand.add_card(test_card)
+	for data in hand_cards:
+		hand.add_card(data)

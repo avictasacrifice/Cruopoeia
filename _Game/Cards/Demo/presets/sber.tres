@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bc7fxex8b6j24"]
+
+[ext_resource type="Texture2D" uid="uid://n8phg5rgvm1g" path="res://_Game/Cards/Demo/art/cber.png" id="1_2prdf"]
+[ext_resource type="Script" uid="uid://debemxympgll4" path="res://_Game/Scripts/CardData.gd" id="2_1orlu"]
+
+[resource]
+script = ExtResource("2_1orlu")
+art = ExtResource("1_2prdf")
+metadata/_custom_type_script = "uid://debemxympgll4"

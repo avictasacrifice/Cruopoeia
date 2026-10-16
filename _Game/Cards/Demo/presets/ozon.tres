@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cevybt1ttksso"]
+
+[ext_resource type="Texture2D" uid="uid://dcbm17kq43daa" path="res://_Game/Cards/Demo/art/ozon.png" id="1_420hl"]
+[ext_resource type="Script" uid="uid://debemxympgll4" path="res://_Game/Scripts/CardData.gd" id="2_l3nod"]
+
+[resource]
+script = ExtResource("2_l3nod")
+art = ExtResource("1_420hl")
+metadata/_custom_type_script = "uid://debemxympgll4"
