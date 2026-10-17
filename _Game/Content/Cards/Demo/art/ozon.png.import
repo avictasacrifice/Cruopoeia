@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcbm17kq43daa"
-path.s3tc="res://.godot/imported/ozon.png-3e1df9bc91e14a6b22405ebb6a7d2ce8.s3tc.ctex"
+path.s3tc="res://.godot/imported/ozon.png-9aed7e5e5ac51eeb4557f2f91647765e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://_Game/Cards/Demo/art/ozon.png"
-dest_files=["res://.godot/imported/ozon.png-3e1df9bc91e14a6b22405ebb6a7d2ce8.s3tc.ctex"]
+source_file="res://_Game/Content/Cards/Demo/art/ozon.png"
+dest_files=["res://.godot/imported/ozon.png-9aed7e5e5ac51eeb4557f2f91647765e.s3tc.ctex"]
 
 [params]
 

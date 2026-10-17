@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://t2uqkp12v6t8"]
 
-[ext_resource type="Script" uid="uid://dln1qk24oa28k" path="res://_Game/Scripts/main.gd" id="1_3ut33"]
-[ext_resource type="Script" uid="uid://dlsxasmg3fg6n" path="res://_Game/Scripts/Card_arranger.gd" id="1_jx51t"]
-[ext_resource type="Script" uid="uid://debemxympgll4" path="res://_Game/Scripts/CardData.gd" id="2_kg7ld"]
-[ext_resource type="Resource" uid="uid://bc7fxex8b6j24" path="res://_Game/Cards/Demo/presets/sber.tres" id="3_hdr34"]
-[ext_resource type="PackedScene" uid="uid://bki0yal6tx15r" path="res://_Game/Scene/Card_Demo.tscn" id="4_6lbxh"]
-[ext_resource type="Resource" uid="uid://cevybt1ttksso" path="res://_Game/Cards/Demo/presets/ozon.tres" id="4_l0gle"]
-[ext_resource type="Script" uid="uid://evoyixf7eb0" path="res://_Game/Scripts/mouse_manager.gd" id="5_cv0lt"]
+[ext_resource type="Script" uid="uid://dln1qk24oa28k" path="res://_Game/Scripts/ManagersL/main.gd" id="1_3ut33"]
+[ext_resource type="Script" uid="uid://dlsxasmg3fg6n" path="res://_Game/Scripts/CardsL/Card_arranger.gd" id="1_jx51t"]
+[ext_resource type="Script" uid="uid://debemxympgll4" path="res://_Game/Scripts/CardsL/CardData.gd" id="2_kg7ld"]
+[ext_resource type="Resource" uid="uid://bc7fxex8b6j24" path="res://_Game/Content/Cards/Demo/presets/sber.tres" id="3_hdr34"]
+[ext_resource type="PackedScene" uid="uid://bki0yal6tx15r" path="res://_Game/Content/Cards/Demo/scene/Card_Demo.tscn" id="4_6lbxh"]
+[ext_resource type="Resource" uid="uid://cevybt1ttksso" path="res://_Game/Content/Cards/Demo/presets/ozon.tres" id="4_l0gle"]
+[ext_resource type="Script" uid="uid://evoyixf7eb0" path="res://_Game/Scripts/ManagersL/mouse_manager.gd" id="5_cv0lt"]
 
 [node name="Main" type="Node3D" unique_id=403618801 node_paths=PackedStringArray("hand")]
 script = ExtResource("1_3ut33")

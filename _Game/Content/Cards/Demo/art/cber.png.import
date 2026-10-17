@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n8phg5rgvm1g"
-path="res://.godot/imported/cber.png-2533213f351fa874353f439c19407826.ctex"
+path="res://.godot/imported/cber.png-61fdef57e4fda3db66eaaa3e0a4249f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_Game/Cards/Demo/art/cber.png"
-dest_files=["res://.godot/imported/cber.png-2533213f351fa874353f439c19407826.ctex"]
+source_file="res://_Game/Content/Cards/Demo/art/cber.png"
+dest_files=["res://.godot/imported/cber.png-61fdef57e4fda3db66eaaa3e0a4249f0.ctex"]
 
 [params]
 
